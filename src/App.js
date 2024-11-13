@@ -4,7 +4,7 @@ import './App.css';
 
 const CountryCard = ({flag, name}) => {
   return (
-    <div className="card">
+    <div className="countryCard">
       <img src={flag} alt={name} />
       <p>{name}</p> 
     </div>
@@ -44,7 +44,7 @@ function App() {
      <div className='nav-bar'>
       <input type="text" placeholder='Search for country' onChange={(e) =>handleChange(e)}/>
      </div>
-     <div className='.countryCard'>
+     <div className='country-card'>
       {
         searchCountry.map((country) => (
           <CountryCard flag={country.flags.png} key={country.name.common} name={country.name.common} />
