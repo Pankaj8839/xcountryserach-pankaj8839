@@ -6,7 +6,7 @@ const CountryCard = ({flag, name}) => {
   return (
     <div className="card">
       <img src={flag} alt={name} />
-      <h2>{name}</h2> 
+      <p>{name}</p> 
     </div>
   )
 }
@@ -47,7 +47,7 @@ function App() {
      <div className='country-card'>
       {
         searchCountry.map((country) => (
-          <CountryCard flag={country.flags.png} name={country.name.common} />
+          <CountryCard flag={country.flags.png} key={country.name.common} name={country.name.common} />
         ))
       }
      </div>
