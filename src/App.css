@@ -16,7 +16,7 @@
 .nav-bar input{
   width:400px;
 }
-.country-card{
+.countryCard{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -31,7 +31,7 @@
   align-items: center;
   flex-direction: column;
   margin: 10px;
-  border: 1px solid rgb(147, 144, 144);
+  border: 1px solid #ccc;
   padding: 10px;
   border-radius: 10px;
   text-align: center;
